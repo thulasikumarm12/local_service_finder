@@ -1,0 +1,52 @@
+.home-container {
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1600359756302-58c8dc3093a5');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.button-group button {
+  padding: 15px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #2196f3;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: #1976d2;
+}
