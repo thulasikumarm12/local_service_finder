@@ -16,7 +16,7 @@ WORKDIR /app
 # Copy the built JAR from the previous stage
 COPY --from=build /app/target/*.jar app.jar
 
-# Expose the port
+# Expose the port your Spring Boot app runs on
 EXPOSE 8080
 
 # Run the Spring Boot application
