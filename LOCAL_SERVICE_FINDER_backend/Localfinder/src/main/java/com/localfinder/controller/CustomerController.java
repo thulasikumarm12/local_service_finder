@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:3007") // Update this to match your frontend URL and port
+@CrossOrigin(origins = "http://localhost:3000") // Update this to match your frontend URL and port
 @RestController
 @RequestMapping("/api")
 public class CustomerController {
