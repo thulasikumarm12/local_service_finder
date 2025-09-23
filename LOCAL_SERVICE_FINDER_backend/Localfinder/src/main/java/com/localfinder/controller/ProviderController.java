@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:3000")  // Adjust if frontend port differs
+@CrossOrigin(origins = "https://local-service-finder-13.onrender.com")  // Adjust if frontend port differs
 @RestController
 @RequestMapping("/api")
 public class ProviderController {
