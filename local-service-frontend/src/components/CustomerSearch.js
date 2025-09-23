@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './FormStyles.css';
+const API_BASE_URL = process.env.REACT_APP_API_URL;
 
 function CustomerSearch() {
   const [service, setService] = useState('');
@@ -77,7 +78,7 @@ function CustomerSearch() {
     setError('');
 
     // Send lat/lng instead of location string
-    axios.get( `${window.API_BASE_URL}/api/searchProvidersByServiceAndLocation`, {
+    axios.get( `${API_BASE_URL}/api/searchProvidersByServiceAndLocation`, {
       params: {
         serviceType: service,
         lat: locationCoords.lat,

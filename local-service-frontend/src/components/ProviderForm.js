@@ -1,6 +1,7 @@
 // src/components/ProviderForm.js
 import React, { useState } from 'react';
 import axios from 'axios';
+const API_BASE_URL = process.env.REACT_APP_API_URL;
 
 function ProviderForm() {
   const [formData, setFormData] = useState({
@@ -74,7 +75,7 @@ function ProviderForm() {
     setError('');
 
     try {
-      await axios.post(`${window.API_BASE_URL}/api/registerProvider`, formData);
+      await axios.post(`${API_BASE_URL}/api/registerProvider`, formData);
       alert('Provider registered successfully!');
       setFormData({
         name: '',
