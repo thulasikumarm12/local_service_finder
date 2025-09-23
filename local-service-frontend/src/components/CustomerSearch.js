@@ -77,7 +77,7 @@ function CustomerSearch() {
     setError('');
 
     // Send lat/lng instead of location string
-    axios.get('http://localhost:8080/api/searchProvidersByServiceAndLocation', {
+    axios.get( `${window.API_BASE_URL}/api/searchProvidersByServiceAndLocation`, {
       params: {
         serviceType: service,
         lat: locationCoords.lat,

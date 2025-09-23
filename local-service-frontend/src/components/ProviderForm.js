@@ -74,7 +74,7 @@ function ProviderForm() {
     setError('');
 
     try {
-      await axios.post('http://localhost:8080/api/registerProvider', formData);
+      await axios.post(`${window.API_BASE_URL}/api/registerProvider`, formData);
       alert('Provider registered successfully!');
       setFormData({
         name: '',
