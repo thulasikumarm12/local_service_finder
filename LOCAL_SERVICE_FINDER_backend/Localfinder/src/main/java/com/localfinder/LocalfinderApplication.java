@@ -20,7 +20,7 @@ public class LocalfinderApplication {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://local-service-finder-13.onrender.com") // React frontend
+                        .allowedOrigins("http://localhost:3000") // React frontend
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("*");
             }
